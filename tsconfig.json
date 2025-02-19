@@ -20,16 +20,17 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*", "./src/app/*"],
+      "public/*": ["./public/*"]
     }
   },
-  "include": [
+"include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/lib/placeholder-data.ts",
+    "src/app/lib/placeholder-data.ts",
     "scripts/seed.js"
   ],
-  "exclude": ["node_modules"]
+    "exclude": ["node_modules"]
 }
